@@ -112,16 +112,27 @@ document.querySelector('#convertedText').innerText = upperText
 //code checker
 
 //set variables for strings of code i want checked
-
+const docQuerySel = "document.querySelector"
+const adEvLi = "addEventListener"
 //set event listner for click
-
+document.querySelector('#checkCode').addEventListener('click', checkCode)
 //set function
-
+function checkCode(){
 //check input code string against stored variables.
-
+inputCode = document.querySelector('#codeInput').value
 //output
+if (inputCode.includes(docQuerySel && adEvLi)){
+	document.querySelector('#codeResult').innerText = "DOMINOS!"
+	document.querySelector('#correct').classList.remove('hidden')
+	document.querySelector('#tryAgain').classList.add('hidden')
+}
+else {
+	document.querySelector('#codeResult').innerText = "Try Again"
+	document.querySelector('#tryAgain').classList.remove('hidden')
+	document.querySelector('#correct').classList.add('hidden')
+}
 
-
+}
 
 
 
