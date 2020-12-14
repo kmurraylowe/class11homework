@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Class 11 Homework</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+
+	<section class="moeLifeSelector">
+		<h2>Moe stage of life selector formerly Bachelor 2</h2>
+		<div>
+			<ul class="btn-container">
+				<li><button id="puppy" class="moeBtn">Pupper</button></li>
+				<li><button id="yearOld" class="moeBtn">Naught Boy</button></li>
+				<li><button id="adult" class="moeBtn">Handsome Man</button></li>
+			</ul>
+		</div>
+
+		<div class="gallery-container">
+			<img id="moeYoung" class="hidden" src="https://i.imgur.com/7xuhBhK.jpg?1">
+			<img id="moeYearOld" class="hidden" src="https://i.imgur.com/NX00CaN.jpg?1">
+			<img id="moeAdult" class="hidden" src="https://i.imgur.com/DGZirei.jpg?1">
+		</div>
+	</section>
+
+
+	<section class="temperatureConverter">
+		<div class="temp-container">
+			<h1>Convert Fahrenheit to Celcius</h1>
+			<input id="input-temp" type="text" name="fahrenheit" placeholder="fahrenheit">
+
+		<button id="temp-btn">convert</button>
+		</div>
+		<div class="result-container">
+			<h2 id="converted-temp"></h2>
+		</div>
+	</section>
+
+
+	<section class="is-it-fightday">
+		<h1>Is it Fight Day?`</h1>
+		<input id="input-day" type="text" name="fightDay" placeholder="What day is it?">
+
+		<button id="fight-btn">convert</button>
+
+		<h2 id="fightDay-Result"></h2>
+		<iframe id="buffer" class="hidden"src="https://giphy.com/embed/2YnEtrmVOoUEcXeZxq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ufc-2YnEtrmVOoUEcXeZxq"></a></p>
+
+		<iframe id="bored" class="hidden" src="https://giphy.com/embed/l2JhpjWPccQhsAMfu" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nickelodeon-funny-spongebob-squarepants-l2JhpjWPccQhsAMfu"></a></p>
+
+		<iframe id="almost" class="hidden" src="https://giphy.com/embed/l3q2RJBdaqJY2SV3O" width="480" height="398" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jerseydemic-l3q2RJBdaqJY2SV3O"></a></p>
+
+		<iframe id="spelling" class="hidden" src="https://giphy.com/embed/fMA6XWvqkienroIyQA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/awkward-marketing-rka-ink-fMA6XWvqkienroIyQA"></a></p>
+
+	</section>
+
+	<section class="textConverter">
+		<h1>Convert text to lower case</h1>
+		<textarea id="textToConvert" name="textArea" rows="5" cols="33" ></textarea>
+		<div class="tempBtnContainer">
+		<button id="text-btn">Convert Lower</button>
+		<button id="upper-btn">Convert Upper</button>
+		</div>
+		<p id="convertedText">  </p>
+
+		
+	</section>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

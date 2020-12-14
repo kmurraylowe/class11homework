@@ -1,0 +1,125 @@
+/* Box Model Hack */
+* {
+   box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*MOE*/
+.moeLifeSelector {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.btn-container  {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn-container li {
+	margin: 10px;
+	list-style: none;
+}
+
+.moeBtn {
+	width: 100px;
+	height: 40px;
+}
+
+.gallery-container {
+	
+	
+	display: flex;
+	justify-content: center;
+}
+
+.gallery-container img {
+	height: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+/*TEMPRATURE*/
+
+.temperatureConverter {
+	background: lightgray;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10vh;
+}
+
+.temp-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#input-temp {
+	text-align: center;
+}
+#temp-btn {
+	width: 30%;
+}
+
+/*FIGHT DAY*/
+
+.is-it-fightday {
+
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	padding: 10vh;
+}
+
+.gold-background {
+	background: gold;
+}
+
+
+/*Text converter*/
+.textConverter {
+	background: pink;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	padding: 10vh;
+}
+
+#convertedText {
+	display: block;
+	font-size: 1.5rem;
+	width: 30%;
+	font-weight: bold;
+	text-align: center;
+}
+.tempBtnContainer {
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+}
+
+
+
+
+
+
